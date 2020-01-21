@@ -1,0 +1,23 @@
+{
+  "name": "feathersjs",
+  "version": "1.0.0",
+  "description": "playing around with feathers js framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giordifungula/feathersjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giordifungula/feathersjs/issues"
+  },
+  "homepage": "https://github.com/giordifungula/feathersjs#readme",
+  "dependencies": {
+    "@feathersjs/feathers": "^4.5.0"
+  }
+}

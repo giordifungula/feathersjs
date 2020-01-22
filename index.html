@@ -11,6 +11,10 @@
   <body>
     <div id="app" class="flex flex-column">
         <h1>Welcome to Feathers Application</h1>
+        <form action="" class="form" onsubmit="sendMessage(event.preventDefault())">
+            <input type="text" placeholder="Enter a message here">
+            <button type="submit" class="button button-primary">Send Message</button>
+        </form>
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.js"></script>
     <script src="//unpkg.com/@feathersjs/client@^4.3.0/dist/feathers.js"></script>

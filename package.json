@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/giordifungula/feathersjs#readme",
   "dependencies": {
-    "@feathersjs/feathers": "^4.5.0"
+    "@feathersjs/express": "^4.5.0",
+    "@feathersjs/feathers": "^4.5.0",
+    "@feathersjs/socketio": "^4.5.0"
   }
 }

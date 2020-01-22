@@ -9,6 +9,7 @@ class MessageService {
     }
     async find(){
         return this.messages
+        // return messages
     }
     async create(data) {
         const message = {

@@ -15,6 +15,7 @@
             <input type="text"id="message-text" placeholder="Enter a message here">
             <button type="submit" class="button button-primary">Send Message</button>
         </form>
+        <h2>Current Messeages</h2>
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.js"></script>
     <script src="//unpkg.com/@feathersjs/client@^4.3.0/dist/feathers.js"></script>
@@ -29,9 +30,21 @@
             await app.service('messages').create({
                 text: messageInput.value
             });
-            messageInput = ''
+            messageInput.value = ''
             alert("Sent")
         }
+
+        function addMessage(message){
+            const messageElement = document.createElement('p')
+            messageElement.textContent = message.text
+            document.getElementById('app').appendChild(messageElement)
+        }
+
+        const main = async () => {
+            const messages = await app.service('messages').find()
+            messages.forEach(addMessage)
+        }
+        main()
     </script>
     <!-- <script src="index.html"></script> -->
   </body>
